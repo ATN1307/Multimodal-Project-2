@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>What is Bordeaux Apartsment?</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* --------- Background behind everything --------- */
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("C:/Users/arjun/Downloads/img1.jpg") center/cover no-repeat;
+      z-index: -1;
+    }
+
+    /* Foreground content so it is NOT blurred */
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* --------- Card styles --------- */
+    .apartment-card {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .apartment-content {
+      padding: 16px 20px 20px;
+    }
+
+    .apartment-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+
+    .apartment-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .apartment-price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #2f7d32;
+    }
+
+    .apartment-address {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+    }
+
+    .apartment-facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 0.9rem;
+    }
+
+    .fact-pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #f0f0f0;
+    }
+
+    .apartment-amenities {
+      margin-bottom: 12px;
+      font-size: 0.9rem;
+    }
+
+    .apartment-amenities strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .apartment-amenities ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    .apartment-description {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 16px;
+    }
+
+    .apartment-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.9rem;
+      border-top: 1px solid #eee;
+      padding-top: 10px;
+    }
+
+    .contact-btn {
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: none;
+      background: #1976d2;
+      color: #fff;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .contact-btn:hover {
+      opacity: 0.9;
+    }
+
+    /* --------- Image gallery styles --------- */
+    .apartment-image {
+      padding: 0;
+    }
+
+    .apartment-image-main {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .apartment-image-thumbs {
+      display: flex;
+      gap: 8px;
+      margin: 8px 10px 10px;
+      overflow-x: auto;
+    }
+
+    .apartment-image-thumbs img {
+      height: 80px;
+      border-radius: 8px;
+      flex-shrink: 0;
+      object-fit: cover;
+      cursor: pointer;
+      opacity: 0.9;
+    }
+
+    .apartment-image-thumbs img:hover {
+      opacity: 1;
+    }
+
+    /* Make it look nice on smaller screens */
+    @media (max-width: 480px) {
+      .apartment-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .apartment-footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+.go-back {
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.go-back:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+  </style>
+</head>
+<body>
+  <button onclick="window.location.href='index.html.html'" class="go-back">← Go Back</button>
+
+  <div class="background"></div>
+
+  <div class="content">
+    <article class="apartment-card">
+
+      <!-- Image gallery: big main photo + thumbnails -->
+      <div class="apartment-image">
+        <!-- Big main photo -->
+        <img
+          src="C:\Users\arjun\Downloads\IMG_1744.jpeg"
+          alt="Apartment exterior"
+          class="apartment-image-main"
+        >
+
+        <!-- Thumbnails row -->
+        <div class="apartment-image-thumbs">
+          <img src="C:\Users\arjun\Downloads\IMG_1745.jpeg" alt="Apartment Exterior 2">
+          <img src="C:\Users\arjun\Downloads\IMG_1742.jpeg" alt="Master Bedroom">
+          <img src="C:\Users\arjun\Downloads\IMG_1741.jpeg" alt="My bedroom">
+          <img src="C:\Users\arjun\Downloads\IMG_1743.jpeg" alt="Kitchen Room">
+          <img src="C:\Users\arjun\Downloads\img1.jpg" alt="Infornt of apartment">
+        </div>
+      </div>
+
+      <div class="apartment-content">
+        <header class="apartment-header">
+          <div class="apartment-title">Apartment L1</div>
+          <div class="apartment-price">$1,000 / month</div>
+        </header>
+
+        <div class="apartment-facts">
+          <span class="fact-pill">🛏 2 beds</span>
+          <span class="fact-pill">🛁 2 baths</span>
+          <span class="fact-pill">📏 875 sq ft</span>
+          <span class="fact-pill">🏢 1st floor</span>
+        </div>
+
+        <section class="apartment-amenities">
+          <strong>Amenities:</strong>
+          <ul>
+            <li>In-unit laundry</li>
+            <li>Central heating & air</li>
+            <li>High-speed Wi-Fi available</li>
+            <li>Pet-friendly (with deposit)</li>
+          </ul>
+        </section>
+
+        <section class="apartment-description">
+          What is Bordeaux Apartments, the question alone seems a bit odd. Some might answer, it's just an apartment. Although the features above might makes look like a basic apartment,
+          Bordeaux apartments holds a special place in my heart because it is the first apartment I lived in when I moved to the U.S. it add the necessary comfort I required and
+          I felt very safe living here. Unlike my previous home which I named 
+          <a href="https://www.redfin.com/TX/Kingsville/729-W-C-Ave-78363/home/111714496"
+          target="_blank"
+           title="The blue and white house with the broken window and the beige car">
+          "Bad House"
+          </a>, 
+          I felt very secure living here and the apartment management was very responsive to any issues that came up. 
+          The neighborhood is quiet and peaceful, making it an ideal place to relax after a long day's work.
+
+          However, one downside of the apartment is that it is located near the only Walmart in town and since Kingsville is also considered a kind of rest stop, 
+          there are a lot of crowds that make it noisy at times. Despite Bordeaux being on the other side of the city, far away from the most populated area of Kingsville, 
+          the downtown area, the noise from the highway and Walmart and the buildings in the surrounding area can be quite loud at times.
+        </section>
+      </div>
+    </article>
+  </div>
+
+</body>
+</html>

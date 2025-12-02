@@ -1,0 +1,183 @@
+
+/* .carousel {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+
+.carousel-item {
+  width: 100px;
+  height: 150px;
+  line-height: 150px;
+  color: white;
+  text-align: center;
+  background: #09f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 50% -400px;
+  transition: transform 1s;
+  border-radius: 8px;
+}
+
+.cutton {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #09f;
+  color: white;
+}
+
+.cutton:hover {
+  background: #07c;
+} */
+
+.container {
+  margin: 0 auto;
+  width: 350px;
+  height: 200px;
+  position: relative;
+  perspective: 600px;
+}
+  
+  .carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+.item {
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 350px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.95;
+  font-size: 1.3em;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  user-select: none;
+  background-size: 50% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.item img {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Or "cover" depending on your goal */
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  position: absolute;
+}
+
+.second {
+  opacity: 0;
+}
+
+.image-wrapper:hover .second {
+  opacity: 1;
+}
+
+.image-wrapper:hover .first {
+  opacity: 0;
+}
+
+.a, .b, .c, .d {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.7;
+}
+
+.a {
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+  transform: rotateY(0deg) translateZ(250px);
+  background: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("https://images1.apartments.com/i2/cN1F9DPawa12_qhDkbN1RhScvc-DciVy2FJZwNaref0/111/king-bordeaux-apts-kingsville-tx-building-photo.jpg");
+  font-size: 25px;
+}
+
+.b {
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+  transform: rotateY(120deg) translateZ(250px);
+  background: white;
+  background-image: url("https://medicalchannelasia.com/wp-content/uploads/2025/01/noise-pollution-a-not-so-quiet-threat-to-our-health.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 25px;
+}
+
+.c {
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+  transform: rotateY(240deg) translateZ(250px);
+  background: rgb(0, 0, 0);
+  background-image: url("https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSPDEjCA2BBL_Lf57BcmeIAf82Fx_P_lqkstTvi6l41kPnKi7z_5Z6puDJXeBRff5QyY-JvdKKC2j3mdqW6u0bhDeHv&s=19");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 25px;
+}
+
+.c:hover {
+  background-image: url("https://kingsvilletexas.com/wp-content/uploads/2017/08/cityhallwide-1100x1100.jpg.webp");
+  background-size: cover;
+}
+
+  /* .d, .e, .f {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } */
+
+
+/* .next:hover, .prev:hover { color: #000; } */
+
+.next:active, .prev:active {
+  box-shadow: 0 1px 0 #999;
+  border-radius: 5px;
+  font-family: "ROMANSEX";
+}
+  
+.next .prev {
+  position: relative;
+  padding: 5px;
+  font-family: "ROMANSEX";
+  font-size: 2.5vw;
+  color: black;
+}
+
+#button-container {
+  display: flex;
+  margin: auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+

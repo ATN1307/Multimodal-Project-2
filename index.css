@@ -1,0 +1,116 @@
+html, body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+.roman {
+  font-family: "RomanSexy", serif;
+}
+
+#noise-div,
+#pine-glen-building-photos,
+#file-div,
+#msms-div,
+#bhs-div,
+#arcade-div,
+#iframe-skinsuit {
+  display: none;
+}
+
+body {
+  font-family: "Times new roman";
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-in-out;
+  background-image: url("https://img.freepik.com/free-photo/sunset-time-tropical-beach-sea-with-coconut-palm-tree_74190-1075.jpg?semt=ais_hybrid&w=740&q=80");
+}
+
+.center {
+  text-align: center;
+}
+
+p, h3 {
+  margin: 0;
+}
+
+.large {
+  font-size: 8vw;
+  text-shadow: 2px 2px 5px #262626;
+}
+
+.mid {
+  font-size: 6vw;
+  text-shadow: 2px 2px 5px #262626;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.glass-button {
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent glass */
+  backdrop-filter: blur(10px);           /* Glass blur effect */
+  -webkit-backdrop-filter: blur(10px);   /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: black;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  margin: auto;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.iframe-wrapper {
+  position: relative;
+  height: 70vh;
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #container {
+  width: 95%;
+  height: 90%;
+  overflow-y: auto;
+} */
+
+#photo-viewer {
+  display: none;
+}
+
+#bp-iframe {
+  margin: auto;
+  text-align: center;
+  border: none;
+  width: 800px;
+  height: 500px;
+}

@@ -1,0 +1,367 @@
+<!Doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bordeaux Apartments – Research Findings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: url("C:/Users/arjun/Downloads/img1.jpg") center/cover no-repeat;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("C:/Users/arjun/Downloads/img1.jpg") center/cover no-repeat;
+      filter: blur(8px);
+      z-index: -1;
+    }
+
+     .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    .summary {
+      background: #eef4ff;
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #f0f0f0;
+      font-size: 0.85rem;
+    }
+
+    .section {
+      margin-bottom: 24px;
+    }
+
+    .section-header {
+      border-left: 4px solid #4a6ee0;
+      padding-left: 10px;
+      margin-bottom: 12px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .card {
+      border-radius: 10px;
+      padding: 12px 14px;
+      background: #fafafa;
+      border: 1px solid #e1e1e1;
+      font-size: 0.95rem;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1rem;
+    }
+
+    .quote {
+      border-left: 4px solid #ffb74d;
+      padding-left: 12px;
+      margin: 8px 0;
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+    .quote span {
+      display: block;
+      margin-top: 4px;
+      font-size: 0.8rem;
+      color: #666;
+      font-style: normal;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 0.75rem;
+      border-radius: 999px;
+      background: #e3f2fd;
+      color: #1565c0;
+      margin-top: 6px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 16px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: #1976d2;
+    }
+
+    @media (max-width: 700px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .tooltip .tooltip-img {
+      visibility: hidden;
+      opacity: 0;
+      width: 250px;
+      position: absolute;
+      top: -10px;
+      left: 120%;
+      border-radius: 8px;
+      transition: opacity 0.3s;
+      z-index: 20;
+    }
+
+    .tooltip:hover .tooltip-img {
+      visibility: visible;
+      opacity: 1;
+    }
+
+
+    .tool {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .tool .tool-img {
+      visibility: hidden;
+      opacity: 0;
+      width: 250px;
+      position: absolute;
+      top: -10px;
+      left: 120%;
+      border-radius: 8px;
+      transition: opacity 0.3s;
+      z-index: 20;
+    }
+
+    .tool:hover .tool-img {
+      visibility: visible;
+      opacity: 1;
+    }
+
+
+
+    /* Style for horn button */
+    .horn-btn {
+      padding: 6px 12px;
+      background: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .horn-btn:hover {
+      background: #125a9c;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+  <audio id="hornSound" src="C:\Users\arjun\Downloads\Studio 1 - Mix.mp3"></audio>
+  <main class="page">
+    <a href="index.html.html" class="back-link">← Back to Bordeaux homepage</a>
+
+    <h1>Research on Living at Bordeaux Apartments</h1>
+
+    <div class="summary">
+      <strong>Summary:</strong> HELLOOOOOOO, This page represents the clumination of my research throughout Thanksgiving break.
+      This page will foucs on the interviews that I conducted around my neighborhood, and the observations that I made while travelling
+      around the town looking things that could possibly induce noise pollution in my neighbourhood
+    </div>
+
+    <div class="pill-row">
+      <span class="pill">Observations</span>
+      <span class="pill">Interviews</span>
+      <span class="pill">Noise & environment</span>
+      <span class="pill">Daily life</span>
+    </div>
+
+    <!-- Methods section -->
+    <section class="section">
+      <div class="section-header">
+        <h2>How I conducted the interviews</h2>
+      </div>
+      <p>
+        I conducted all the interviews during the afternoon, I chose the after noon because that's when people are the most energetic and open
+        to tolearating random questions. I chose to interview 10 people at random and took notes of responses. Some people were willing to be recorded
+        and give me there names while others only agreed to being interviewed but didn't want there name to be put out nor did they want to be recorded.     </p>
+      <ul>
+        <li><strong>Observations:</strong> Time of day, noises observed, and most bothersome noise</li>
+        <li><strong>Interviews:</strong> 6 residents asked about safety, comfort, and annoyances.</li>
+      </ul>
+    </section>
+
+    <!-- Themes/findings -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Noticeable Sounds around :</h2>
+      </div>
+      <div class="two-col">
+        <article class="card">
+          <h3>1. Loudest sounds</h3>
+          <p>
+            While I was conducting my observations in my town, I learnt that 
+            <span class="tool">
+              <img class="tool-img" src="https://www.caller.com/gcdn/-mm-/9ba7b1df5c628099a28306a78ecda02715f80999/c=0-228-4481-2760/local/-/media/2018/04/25/TXGroup/CorpusChristi/636602678463149029-NES-kingsvile-1.jpg?width=1600&height=800&fit=crop&format=pjpg&auto=webp">
+            Naval Air Station Kingsville
+            </span> 
+            is 2.8 miles away from Bordeaux Apartments. Based on my abservations throughout the day, I learnt that the loudest sounds come from the NAS Kingsville because
+            it is used as a training base for prospective fighter jet pilots. Because of during the week during the afternoons, you can hear constant
+            whirring of a 
+            <span class="tooltip">
+            T-45-Goshawk
+                <img class="tooltip-img" 
+                    src="https://www.cnatra.navy.mil/tw2/assets/img/car-02.jpg" 
+                    alt="T-45 Goshawk">
+            </span>
+
+            flying above the apartsment going to land back at NAS Kingsville.
+        </p>
+          <div class="quote">
+            “I find the sounds from the jets very annoying at times, despite living here for a 2 years I still can't get used to the sounds”
+            <span>-Tanya (20)</span>
+          </div>
+          <span class="tag">Theme: Noise & Comfortability</span>
+        </article>
+
+        <article class="card">
+          <h3>2. Consistent Noises</h3>
+          <p>
+            Bordeaux Apartments is located near a Walmart and a major highway, which leads to consistent noise from traffic and shoppers.
+            And since the apartments are located near a major highway, there tend to be many people who rev their engines late at night which tends
+            to disturb the peace and quiet of the neighborhood.
+          </p>
+          <div class="quote">
+            "The damn kids always revving up their engines and speeding late at night, is annoying to deal with."
+            <span>– Michelle (52)</span>
+          </div>
+          <span class="tag">Theme: Noise & Environment</span>
+        </article>
+
+        <article class="card">
+          <h3>3. Animals</h3>
+          <p>
+            Many residents mentioned that neighborhood dogs barking can be disruptive, especially in the early morning or late evening. Throughout thanksgiving break,
+            I got woken up multiple times because of dogs barking or the cats fighting in the neighborhood which made it hard to get a peaceful sleep.
+          </p>
+          <div class="quote">
+            “I'd shoot the dogs if I ever got the chance to do so”
+            <span>– William (50)</span>
+          </div>
+          <div class="quote">
+            “The dogs barking can be annoying at times but I have lived here for about 10 years now, so I just got used to it.”
+            <span>-Luis (20)</span>
+          </div>
+          
+          <span class="tag">Theme: Noise & Environment</span>
+        </article>
+
+        <article class="card">
+          <h3>4. Bothersome but Bareable Sounds</h3>
+          <p>
+            Out of all the noises, I the sound that kept being mentioned was the sound of the train. There is a railway that crosses through Kingsville and,
+            it is about a 2 miles away from Bordeaux Apartments. The train tends to pass by 2 times a week and when ever it does, it blares its horn
+            for more than 5 minutes which can be very disruptive to the peace and quiet of the neighborhood. Despite this from my own personal experience and talking with my neighbors,
+            the noise of the train although bothersome, it is also bareable because the train's schedule is always sporradic. Sometimes it comes 2 times a week and sometimes it is only once every 2 weeks.
+          </p>
+
+        <button class="horn-btn" id="hornBtn" onclick="toggleHorn()">🔊 Play Train Horn</button>
+
+    <script>
+    function toggleHorn() {
+    const horn = document.getElementById('hornSound');
+    const btn = document.getElementById('hornBtn');
+
+    if (horn.paused) {
+      horn.play();
+      btn.textContent = "⏸ Pause Train Horn";
+    } else {
+      horn.pause();
+      btn.textContent = "🔊 Play Train Horn";
+    }
+  }
+    </script>
+
+          <div class="quote">
+            “I was trying to interview my landlord and eneded up running out and having to postpone the interview of time because the train kept blaring it's horn”
+            <span>– My own experience</span>
+          </div>
+          <div class="quote">
+            “Even though the train is lounder, I'd still take it over the barking of dogs or the loud cars because the sound of the train has an end to it”
+            <span>– Resident</span>
+          </div>
+          <span class="tag">Theme: Noise & Comfortability</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Evidence section -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Observation Notes</h2>
+      </div>
+      <ul>
+        <li><strong>Sound Theory #1 :</strong> People find car noises and the animal sounds(barking, cats fighting, etc.) to be way more annoying than the sounds of jets and trains.</li>
+        <li><strong>Sound Theory #2 :</strong> Regardless of age, I learnt that the longer people have resided in this neighborhood, they have a much easier time tolerating a lot of the noises.</li>
+        <li><strong>Sound Theory #3:</strong> People find the noises of cars and animals to be more annoying because they hear them much more than the jets and train. In short sounds of animals and cars are more annoying because they are more frequent.</li>
+      </ul>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Conclusions I reached:</h2>
+      </div>
+      <p>
+        In the NOISSEEEEE page, I introducted my hypothesss regarding the noises in my neighborhood and listed out some theories that I had regarding the noises.
+        After conducting my observations and interviews, I have come to the conclusion that my hypothesis was completely reveresed. I had thought that the loudest and most disruptive noise
+        would be the sound of the train horn or the jets but after conducting my research, I found that people find the consistent noises from cars revving down the street or animals barking to be more disruptive
+        to their daily lives. This is because unlike the train or jets, which happen 2 times a week or even less frequently, the sounds from cars and animals happen multiple times a day and can be very hard to ignore and 
+        are much more consistent throughout the year. All of  
+      </p>
+    </section>
+  </main>
+  </div>
+</body>
+</html>
