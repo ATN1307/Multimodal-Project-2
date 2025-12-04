@@ -187,6 +187,29 @@
   background: rgba(255, 255, 255, 0.25);
 }
 
+
+ .Bhouse {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .Bhouse .Bhouse-img {
+      visibility: hidden;
+      opacity: 0;
+      width: 250px;
+      position: absolute;
+      top: -10px;
+      left: 120%;
+      border-radius: 8px;
+      transition: opacity 0.3s;
+      z-index: 20;
+    }
+
+    .Bhouse:hover .Bhouse-img {
+      visibility: visible;
+      opacity: 1;
+    }   
   </style>
 </head>
 <body>
@@ -244,7 +267,9 @@
           Bordeaux apartments holds a special place in my heart because it is the first apartment I lived in when I moved to the U.S. it add the necessary comfort I required and
           I felt very safe living here. Unlike my previous home which I named 
           <span class=Bhouse>
-          <img src= ../Multimodal-Project-2/>
+          <img class= "Bhouse-img" 
+            src= ../Multimodal-Project-2/Bad_House.png
+            alt="Picture of my old house">
           "Bad House"
           </span>, 
           I felt very secure living here and the apartment management was very responsive to any issues that came up. 
@@ -260,6 +285,7 @@
 
 </body>
 </html>
+
 
 
 
